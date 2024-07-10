@@ -82,7 +82,7 @@ function Home() {
   // Requête backend pour importer les données API dans le tableau moviesData
   const [newMoviesData, setNewMovies] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/movies")
+    fetch("https://mymovizpart5-backend-tovercel.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
